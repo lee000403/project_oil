@@ -1,0 +1,653 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -172,
+    "scrollLeft": -83,
+    "zoomLevel": 1,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "MySQL",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "GraphQL",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "COMUNITY",
+        "comment": "커뮤니티",
+        "columns": [
+          {
+            "name": "write_number",
+            "comment": "작성 번호",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 80.75537109375,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "91680fe6-2292-4c06-bbbe-e4d1998ca4db"
+          },
+          {
+            "name": "title",
+            "comment": "제목",
+            "dataType": "VARCHAR(500)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "3f51e860-4ea6-452b-bab0-1370d237d82c"
+          },
+          {
+            "name": "body",
+            "comment": "내용",
+            "dataType": "VARCHAR(5000)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 102.1787109375,
+              "widthDefault": 60
+            },
+            "id": "b2883b08-ed15-4df6-a1d5-b059594e6ef7"
+          },
+          {
+            "name": "nickname",
+            "comment": "작성자",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "72f4d68f-2d5a-4a8a-bafb-60848b731df1"
+          },
+          {
+            "name": "time",
+            "comment": "작성날짜",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 66.7587890625,
+              "widthDefault": 60
+            },
+            "id": "bb9ed69f-ec7d-4c1c-8d43-e544ec228d40"
+          },
+          {
+            "name": "area_unique",
+            "comment": "지역 고유 번호",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 74.287109375,
+              "widthComment": 87.2236328125,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "fc11c668-64fc-47a6-a1df-a2fc2e56be2c"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 472,
+          "top": 177,
+          "zIndex": 142,
+          "widthName": 71.3291015625,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "50122779-732a-4467-b046-20c9526e04b8"
+      },
+      {
+        "name": "REVIEW",
+        "comment": "댓글",
+        "columns": [
+          {
+            "name": "write_number",
+            "comment": "작성 번호",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 80.75537109375,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "e730ed53-5252-45a0-aba1-a41eda5112ed"
+          },
+          {
+            "name": "review_name",
+            "comment": "댓글 작성자",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 79.314453125,
+              "widthComment": 70.61181640625,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "10a78238-0601-4237-8bf6-5d4fea9b83ef"
+          },
+          {
+            "name": "review_body",
+            "comment": "댓글 내용",
+            "dataType": "VARCHAR(500)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 74.9853515625,
+              "widthComment": 60,
+              "widthDataType": 94.94873046875,
+              "widthDefault": 60
+            },
+            "id": "4904793c-a7e4-4308-bca4-563f59d05186"
+          },
+          {
+            "name": "review_time",
+            "comment": "댓글 작성날짜",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 71.3544921875,
+              "widthComment": 83.61181640625,
+              "widthDataType": 66.7587890625,
+              "widthDefault": 60
+            },
+            "id": "c1ebe26d-0449-40ab-95a6-91cfbb34a6c0"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 174,
+          "top": 512,
+          "zIndex": 152,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "051d4946-d4d0-43b4-85f3-af415ebd0b1b"
+      },
+      {
+        "name": "REGION",
+        "comment": "지역",
+        "columns": [
+          {
+            "name": "area_unique",
+            "comment": "지역 고유 번호",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 74.287109375,
+              "widthComment": 87.2236328125,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "ee64797f-84a5-49d4-865a-c3b8eece7cca"
+          },
+          {
+            "name": "area",
+            "comment": "지역 이름",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "f5401264-5911-4f17-bcb7-27137fee332e"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1060,
+          "top": 202,
+          "zIndex": 144,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "7a1c2c93-e6d5-4c4f-8e2e-134b50941d87"
+      },
+      {
+        "name": "OIL_PRICE",
+        "comment": "기름가격",
+        "columns": [
+          {
+            "name": "area_unique",
+            "comment": "지역 고유 번호",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 74.287109375,
+              "widthComment": 87.2236328125,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "98a8c904-bac8-426a-b03d-48f48c20719f"
+          },
+          {
+            "name": "oil_price",
+            "comment": "기름 가격",
+            "dataType": "INTEGER",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "0df7f29a-1b43-4085-aae5-551d09411f81"
+          },
+          {
+            "name": "date_oil",
+            "comment": "해당 날짜",
+            "dataType": "DATETIME",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 66.7587890625,
+              "widthDefault": 60
+            },
+            "id": "986f5a5d-57b5-454b-a848-0b00bc15b589"
+          },
+          {
+            "name": "oil_unique",
+            "comment": "기름 고유 번호",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 61.2744140625,
+              "widthComment": 87.2236328125,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "4396afee-5b00-44c3-b4d7-426a92dad059"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1035,
+          "top": 480,
+          "zIndex": 148,
+          "widthName": 69.91357421875,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "d0271cd0-cfb4-40e4-b76c-c3f098124a01"
+      },
+      {
+        "name": "OIL",
+        "comment": "기름 종류",
+        "columns": [
+          {
+            "name": "oil_unique",
+            "comment": "기름 고유 번호",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 61.2744140625,
+              "widthComment": 87.2236328125,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "17299799-87b3-4c66-a3bc-85abe05f87bb"
+          },
+          {
+            "name": "oil_type",
+            "comment": "기름 종류",
+            "dataType": "VARCHAR(50)",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 87.71875,
+              "widthDefault": 60
+            },
+            "id": "99bbcf23-3c83-46c1-9712-52750fdbf205"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 1042,
+          "top": 686,
+          "zIndex": 150,
+          "widthName": 60,
+          "widthComment": 60
+        },
+        "visible": true,
+        "id": "827488e0-ca0c-463c-9009-980028ea5d7e"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "50122779-732a-4467-b046-20c9526e04b8",
+          "columnIds": [
+            "91680fe6-2292-4c06-bbbe-e4d1998ca4db"
+          ],
+          "x": 690.578857421875,
+          "y": 369,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "051d4946-d4d0-43b4-85f3-af415ebd0b1b",
+          "columnIds": [
+            "e730ed53-5252-45a0-aba1-a41eda5112ed"
+          ],
+          "x": 600.31591796875,
+          "y": 587.5,
+          "direction": "right"
+        },
+        "constraintName": "fk_comunity_to_review",
+        "visible": true,
+        "id": "fb945ce8-3c94-4c31-bccd-53a2f1d69154"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "7a1c2c93-e6d5-4c4f-8e2e-134b50941d87",
+          "columnIds": [
+            "ee64797f-84a5-49d4-865a-c3b8eece7cca"
+          ],
+          "x": 1268.11474609375,
+          "y": 312,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "d0271cd0-cfb4-40e4-b76c-c3f098124a01",
+          "columnIds": [
+            "98a8c904-bac8-426a-b03d-48f48c20719f"
+          ],
+          "x": 1243.11474609375,
+          "y": 480,
+          "direction": "top"
+        },
+        "constraintName": "fk_region_to_oil",
+        "visible": true,
+        "id": "1ea96622-c279-49f7-bbf2-ce5062b2505a"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "7a1c2c93-e6d5-4c4f-8e2e-134b50941d87",
+          "columnIds": [
+            "ee64797f-84a5-49d4-865a-c3b8eece7cca"
+          ],
+          "x": 1060,
+          "y": 257,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "50122779-732a-4467-b046-20c9526e04b8",
+          "columnIds": [
+            "fc11c668-64fc-47a6-a1df-a2fc2e56be2c"
+          ],
+          "x": 909.15771484375,
+          "y": 273,
+          "direction": "right"
+        },
+        "constraintName": "fk_region_to_comunity",
+        "visible": true,
+        "id": "a4f7f9e1-e5ec-4d8f-b80f-67b56b9e8fbb"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "827488e0-ca0c-463c-9009-980028ea5d7e",
+          "columnIds": [
+            "17299799-87b3-4c66-a3bc-85abe05f87bb"
+          ],
+          "x": 1243.6083984375,
+          "y": 686,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "d0271cd0-cfb4-40e4-b76c-c3f098124a01",
+          "columnIds": [
+            "4396afee-5b00-44c3-b4d7-426a92dad059"
+          ],
+          "x": 1243.11474609375,
+          "y": 631,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_oil_to_oil-price",
+        "visible": true,
+        "id": "bf40772f-0246-46d9-99cb-234c8a3b7728"
+      }
+    ]
+  }
+}
