@@ -3,8 +3,8 @@
     "version": "2.2.11",
     "width": 2000,
     "height": 2000,
-    "scrollTop": -1,
-    "scrollLeft": -838,
+    "scrollTop": -180,
+    "scrollLeft": -871,
     "zoomLevel": 1,
     "show": {
       "tableComment": true,
@@ -49,7 +49,7 @@
           {
             "name": "write_number",
             "comment": "작성 번호",
-            "dataType": "VARCHAR(50)",
+            "dataType": "INT",
             "default": "",
             "option": {
               "autoIncrement": false,
@@ -64,7 +64,7 @@
               "pfk": false,
               "widthName": 80.75537109375,
               "widthComment": 60,
-              "widthDataType": 87.71875,
+              "widthDataType": 60,
               "widthDefault": 60
             },
             "id": "91680fe6-2292-4c06-bbbe-e4d1998ca4db"
@@ -189,7 +189,7 @@
           "active": false,
           "left": 472,
           "top": 177,
-          "zIndex": 142,
+          "zIndex": 5,
           "widthName": 71.3291015625,
           "widthComment": 60
         },
@@ -203,7 +203,7 @@
           {
             "name": "write_number",
             "comment": "작성 번호",
-            "dataType": "VARCHAR(50)",
+            "dataType": "INT",
             "default": "",
             "option": {
               "autoIncrement": false,
@@ -218,7 +218,7 @@
               "pfk": false,
               "widthName": 80.75537109375,
               "widthComment": 60,
-              "widthDataType": 87.71875,
+              "widthDataType": 60,
               "widthDefault": 60
             },
             "id": "e730ed53-5252-45a0-aba1-a41eda5112ed"
@@ -297,7 +297,7 @@
           "active": false,
           "left": 174,
           "top": 512,
-          "zIndex": 152,
+          "zIndex": 4,
           "widthName": 60,
           "widthComment": 60
         },
@@ -359,7 +359,7 @@
           "active": false,
           "left": 1060,
           "top": 202,
-          "zIndex": 144,
+          "zIndex": 1,
           "widthName": 60,
           "widthComment": 60
         },
@@ -396,7 +396,7 @@
           {
             "name": "oil_price",
             "comment": "기름 가격",
-            "dataType": "INTEGER",
+            "dataType": "VARCHAR(50)",
             "default": "",
             "option": {
               "autoIncrement": false,
@@ -411,7 +411,7 @@
               "pfk": false,
               "widthName": 60,
               "widthComment": 60,
-              "widthDataType": 60,
+              "widthDataType": 87.71875,
               "widthDefault": 60
             },
             "id": "0df7f29a-1b43-4085-aae5-551d09411f81"
@@ -464,10 +464,10 @@
           }
         ],
         "ui": {
-          "active": false,
+          "active": true,
           "left": 1035,
           "top": 480,
-          "zIndex": 148,
+          "zIndex": 16,
           "widthName": 69.91357421875,
           "widthComment": 60
         },
@@ -529,7 +529,7 @@
           "active": false,
           "left": 1042,
           "top": 686,
-          "zIndex": 150,
+          "zIndex": 3,
           "widthName": 60,
           "widthComment": 60
         },

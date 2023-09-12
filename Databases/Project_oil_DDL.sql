@@ -1,7 +1,8 @@
+CREATE SCHEMA `db_oil` ;
 
 CREATE TABLE COMUNITY
 (
-  write_number VARCHAR(50)   NOT NULL COMMENT '작성 번호',
+  write_number INT   NOT NULL AUTO_INCREMENT COMMENT '작성 번호',
   title        VARCHAR(500)  NOT NULL COMMENT '제목',
   body         VARCHAR(5000) NOT NULL COMMENT '내용',
   nickname     VARCHAR(50)   NOT NULL COMMENT '작성자',
@@ -34,7 +35,7 @@ CREATE TABLE REGION
 
 CREATE TABLE REVIEW
 (
-  write_number VARCHAR(50)  NOT NULL COMMENT '작성 번호',
+  write_number INT  NOT NULL COMMENT '작성 번호',
   review_name  VARCHAR(50)  NOT NULL COMMENT '댓글 작성자',
   review_body  VARCHAR(500) NOT NULL COMMENT '댓글 내용',
   review_time  DATETIME     NOT NULL COMMENT '댓글 작성날짜'
