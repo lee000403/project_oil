@@ -12,6 +12,6 @@ public class MainController {
 
         model.addAttribute("name", "leedonghawn");
 
-        return "./Webapp/jsp/main";
+        return "/WEB-INF/index.html";
     }
 }
