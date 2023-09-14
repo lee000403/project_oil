@@ -1,17 +1,36 @@
 package com.project.project_oil.Controller;
 
-import org.springframework.data.web.PageableDefault;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import com.project.project_oil.Service.OilService;
+
 @Controller
 public class MainController {
+
+    @Autowired
+    OilService oilService;
+
     @GetMapping("/main")
-    public String mainCon(Model model){
+    public String doMain(Model model){
 
-        model.addAttribute("name", "leedonghawn");
+        List<Map<String, String>> list = new ArrayList();
+        list = oilService.doOilList();
 
-        return "/WEB-INF/index.html";
+        model.addAttribute("list", list);
+
+        return "/WEB-INF/views/main.jsp";
+    }
+
+    @GetMapping("/search")
+    public String doSearch(Model model) {
+
+        return "/WEB-INF/views/search.jsp";
     }
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.project.project_oil.dao.OilDao">
+
+	<select id="doOilList" resultType="map">
+		select re.area as area, oil_P.oil_price as oil_price, Oi.oil_type as oil_type, oil_P.date_oil as date_oil  from oil_price as oil_P
+		join region as re
+		on oil_P.area_unique = re.area_unique
+		join oil as Oi
+		on Oi.oil_unique = oil_P.oil_unique
+		;
+	</select>
+
+</mapper>
